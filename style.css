@@ -34,3 +34,22 @@ body {
   transform-origin: center;
 }
 
+.astronaut {
+  animation: bounce 0.45s steps(2) infinite;
+}
+
+@keyframes float {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  13%  { transform: translate(40px, -28px) rotate(4deg); }
+  29%  { transform: translate(-18px, -50px) rotate(-6deg); }
+  44%  { transform: translate(-48px, -8px) rotate(2deg); }
+  58%  { transform: translate(14px, 32px) rotate(-4deg); }
+  73%  { transform: translate(46px, -14px) rotate(6deg); }
+  87%  { transform: translate(-10px, -38px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
