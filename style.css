@@ -15,3 +15,22 @@ body {
   justify-content: center;
   padding: 2rem;
 }
+.container {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scene {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.astronaut-float {
+  animation: float 12s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
